@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #812800;
+}  
+*,
+*:before,
+*:after,{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+    /* Container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+    /* Intro */
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("..//images/intro.jpg")
+        center
+        no-repeat;
+    background-size: cover;
+}
+.intro_title{
+    font-family:cursive;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform:uppercase;
+    text-align: center;
+    line-height: 1.1;
+    text-shadow: 1px 9px #fff;
+}
+.intro_title::after{
+    display:block;
+    content:"";
+    width:100px;
+    height:5px;
+    margin:20px auto 20px;
+    background-color:#ffffff;
+}
+.container_intro_inner{
+    width:100%;
+    max-width: 890px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro_suptitle{
+    font-size: 20px;
+    color:burlywood;
+    font-family:monospace;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 1px 2px black;
+}
+
+
+    /* Header */
+.header{
+    width: 100%;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 5px;
+    
+}
+.logo{
+    font-size: 50px;
+    
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+    /* Nav */
+.nav{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.2s linear 0.4s;
+}
+.nav_link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    display: none;
+    background-color:#868585;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.nav_link:hover{
+    color: #868585;
+}
+.nav_link:hover:after{
+    display:block;
+}
+
+
+    /* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding:10px 15px;
+    border: 6px solid #812800;
+    color:#812800;
+    text-transform:uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.4s linear, color 0.4s linear;
+    
+}
+.btn:hover{
+    background:#812800;
+    color:#868585;
+}
+
+
+
+    /* Slider */
+.slider{
+   width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:1;
+}
+.slider_inner{
+    display:flex;
+    justify-content: space-between;
+}
+.slider_item{
+    width: 24%;
+    font-size: 18px;
+    font-weight: 500;
+    color:#fff;
+    text-transform: uppercase;
+    padding:20px 0;
+    border-top:3px solid #fff;
+    opacity:0.7;
+    position: relative;
+
+}
+.slider_item.active{
+    opacity:1;
+}
+.slider_item.active::before{
+    content:"";
+    display:block;
+    background-color: brown;
+    position:absolute;
+    width:70px;
+    height:3px;
+    top:-3px;
+    left:0;
+    z-index:1;
+}
+
+.slider_num{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Section */
+.section {
+    padding:80px 0;
+}
+.section_header{
+    margin: 0 auto 40px;
+    width:100%;
+    max-width: 950px;
+    text-align: center;
+}
+.section_title{
+    font-size: 50px;
+    font-weight: 700;
+}
+.section_title::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:2px;
+    margin:30px auto;
+    background-color:#333;
+}
+.section_suptitle{
+    font-family:cursive;
+    font-weight:100;
+}
+.section_text{
+    color:#838383;
+}
+
+
+
+
+/* News */
+.news{
+    display:flex;
+    justify-content: space-between;   
+}
+.news_item{
+    width:30%;
+}
+.news_item:hover{
+    border:5px solid #333;
+}
+.img_news{
+    width:380px;
+    height:250px;
+}
+
+
+/*Statistics*/
+.statistics{
+    background-color: #812800;
+}
+.stat{
+    display:flex;
+    justify-content: center;
+    
+}
+.stat_item{
+    flex: 1 1 0;
+    border-left: 1px solid #a5502a;
+    text-align: center;
+    color:#fff;
+    padding:5px 10px;
+}
+.stat_item:last-child{
+    border-right: 1px solid #a5502a;
+} 
+.stat_count{
+    font-weight:700;
+    font-size:60px;
+    }
+.stat_text{
+    font-size:14px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
